@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="juegos, games, digital content, contenido digital, tienda, shop">
-	<meta name="description" content="Pagina en la cual se ve las noticias relacionadas al mundo de los video juegos de la web de arkadia games">
-	<title>News</title>
-
+	<meta name="description" content="Login de la web de arkadia games">
+	<title>Register</title>
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-custom.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-<header>
+	<header>
 		<div class="container">
 			
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -65,87 +64,72 @@
 		</div>	
 	</header>
 
-
-<section id="new" class="section">	
+	<section id="Register" class="section">
 		<div class="container">
-
-			<h2>News</h2>	
-				
+			
 			<div class="row">
-				<article class="col-md-4 col-sm-6">
-					<div class="info-new">
-						<img src="img/nc000.png" alt="Overwatch" width="250px" class="img-fluid imag">
-						<h3 class="titles">HEARTHSTONE</h3>
-						<p>PRESENTAMOS ACADEMIA SHOLOMANCE, LA PRÓXIMA EXPANSIÓN DE HEARTHSTONE. </p>
-					</div>
-				</article>
-
-				<article class="col-md-4 col-sm-6">
-					<div class="info-new">
-						<img src="img/nc001.png" alt="WoW" width="250px" class="img-fluid imag">
-						<h3 class="titles">WORLD OF WARCRAFT</h3>
-						<p>UN 50% DE DESCUENTO EN DETERMINADAS MASCOTAS, MONTURAS Y DEMAS DURANTE LAS REBAJAS DE VERANO.</p>
-					</div>
-				</article>
-
-				<article class="col-md-4 col-sm-6">
-					<div class="info-new">
-						<img src="img/nc002.png" alt="Arkadia" width="250px" class="img-fluid imag">
-						<h3 class="titles">DENTRO DE ARKADIA</h3>
-						<p>TEMPORADA CUATRO INICIA: WARZONE CON 200 JUGADORES Y MAS.</p>
-					</div>
-				</article>
+				<article class="col-sm-12">
+					<form name="contact" id="contact" method="post" action="">
+						
+						<div class="row">
+							<div class="col-md-1 col-sm-12">
+								<label>Full Name</label>
+							</div>
+							
+							<div class="form-group col-md-6 col-sm-12">
+								<input type="text" name="nombre" id="nombre" class="form-control" placeholder="First Name" required>
+							</div>
+							
+							<div class="form-group col-md-5 col-sm-12">
+								<input type="text" name="apellido" id="apellido" class="form-control" placeholder="Last Name" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-1 col-sm-12">
+								<label>Email</label>
+							</div>
+							
+							<div class="form-group col-md-11 col-sm-12">	
+								<input type="email" name="correo" id="correo" class="form-control" placeholder="E-mail" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-12">
+								<label>Password</label>
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
+							
+							<div class="form-group col-md-6 col-sm-12">	
+								<label>Confirm Password</label>
+								<input type="password" name="cpass" id="cpass" class="form-control" placeholder="Rewrite Password" required>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label>Country</label>
+							<select name="pais" id="pais" class="form-control">
+								<option value="HN">Honduras</option>
+								<option value="US">Estados Unidos</option>
+								<option value="CR">Costa Rica</option>
+								<option value="GU">Guatemala</option>
+								<option value="PN">Panama</option>
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<button type="submit" class="btn btn-color btn-block">Register</button>
+						</div>
+						
+					</form>
+				</article>	
 			</div>
+			
 		</div>
 	</section>
-
-<section id="news" class="section">		
-		<div class="container">
 	
-				
-			<div class="row">
-				<article class="col-md-6 col-sm-12">
-						<img src="img/nb002.PNG" alt="newsimg" width="500px" class="img-fluid imag">
-						
-					</article>
-
-					<article class="col-md-6 col-sm-12">
-					<h3 class="titles">WORLD OF WARCRAFT</h3>
-					<h4>Calendario de Camorras JcJ 2020</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus nesciunt, facilis saepe deserunt quibusdam suscipit at ad veniam quisquam, fugit totam itaque. Dicta, ducimus accusamus consequatur, earum illum reprehenderit.</p>
-				
-				</article>
-
-		<article class="col-md-6 col-sm-12">
-						<img src="img/nb000.PNG" alt="newsimg" width="500px" class="img-fluid imag">
-						
-					</article>
-
-					<article class="col-md-6 col-sm-12">
-					<h3 class="titles">STARCRAFT</h3>
-					<h4>Recuerdos de una década: Las mejores partidas de Starcraft III competitivo, <br> parte III: Legacy of the void</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus nesciunt, facilis saepe deserunt quibusdam suscipit at ad veniam quisquam, fugit totam itaque. Dicta, ducimus accusamus consequatur, earum illum reprehenderit.</p>
-				
-				</article>
-				
-				<article class="col-md-6 col-sm-12">
-						<img src="img/nb001.PNG" alt="newsimg" width="500px" class="img-fluid imag">
-						
-					</article>
-
-					<article class="col-md-6 col-sm-12">
-					<h3 class="titles">WORLD OF WARCRAFT</h3>
-					<h4>Calendario de Minifestividades</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus nesciunt, facilis saepe deserunt quibusdam suscipit at ad veniam quisquam, fugit totam itaque. Dicta, ducimus accusamus consequatur, earum illum reprehenderit.</p>
-				
-				</article>
-		
-			</div>
-			</div>
-</section>
-
-
-<footer>
+	<footer>
 		<p> Empleos   Información   Asistencia   Contacto   Prensa   API <br>©2020 ARKADIA. Todos los derechos reservados.Todas las marcas comerciales a las <br>que se hace referencia son propiedad de sus respectivos dueños.CA Residents only: Do not sell my personal information <br>Privacidad      Legal      Términos     Cookies <br><i class="fab fa-facebook-square"></i> 
 		<i class="fab fa-youtube"></i> <i class="fab fa-instagram"></i></p>
 
@@ -154,7 +138,6 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
 	
 </body>
 </html>

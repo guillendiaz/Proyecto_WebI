@@ -155,30 +155,13 @@ footer p{
 	text-align: left;
 }
 
-#abouticons{
-	background-color: #101011;
-}
-
-#abouticons h3{
-	color: #fff;
-	font-size: 20px;
-}
-
-#abouticons p{
-	font-size: 12px;
-}
-
-#abouticons i{
-	font-size: 32px;
-	color: #4859fc;
-}
-
-#abouticons .row{
-	margin-bottom: 3%;
-}
-
 #contactinfo {
 	margin-top: -7%;
+}
+
+#Register{
+	margin-bottom: 100px;
+	margin-top: 100px; 
 }
 
 #contactform input, #contactform textarea{
