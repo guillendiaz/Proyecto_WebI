@@ -68,31 +68,26 @@
 		<div class="container">
 			
 			<div class="row">
-				<article class="col-sm-12">
+				<div class="col-md-4 col-sm-12"></div>
+				
+				<article class="col-md-4 col-sm-12">
 					<form name="contact" id="contact" method="post" action="">
 						
+						<label>Full Name</label>
+						
 						<div class="row">
-							<div class="col-md-1 col-sm-12">
-								<label>Full Name</label>
-							</div>
-							
 							<div class="form-group col-md-6 col-sm-12">
 								<input type="text" name="nombre" id="nombre" class="form-control" placeholder="First Name" required>
 							</div>
 							
-							<div class="form-group col-md-5 col-sm-12">
+							<div class="form-group col-md-6 col-sm-12">
 								<input type="text" name="apellido" id="apellido" class="form-control" placeholder="Last Name" required>
 							</div>
 						</div>
 						
-						<div class="row">
-							<div class="col-md-1 col-sm-12">
-								<label>Email</label>
-							</div>
-							
-							<div class="form-group col-md-11 col-sm-12">	
-								<input type="email" name="correo" id="correo" class="form-control" placeholder="E-mail" required>
-							</div>
+						<div class="form-group col-sm-12">	
+							<label>Email</label>
+							<input type="email" name="correo" id="correo" class="form-control" placeholder="E-mail" required>
 						</div>
 						
 						<div class="row">
@@ -124,6 +119,8 @@
 						
 					</form>
 				</article>	
+				
+				<div class="col-md-4 col-sm-12"></div>
 			</div>
 			
 		</div>
@@ -138,6 +135,16 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177801273-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-177801273-1');
+	</script>
 	
 </body>
 </html>

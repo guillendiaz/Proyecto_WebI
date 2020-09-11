@@ -184,12 +184,13 @@ footer p{
 	color: #11012e;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	box-shadow: 0px 5px 3px 2px #11012e;
 }
 
-.btn-blanco:hover{
-	background-color: #4859FC;
-	border-color: #4859FC;
-	border: 1;
+.btn-color:hover{
+	background-color: #ffcc00;
+	border-color: #ffcc00;
+	box-shadow: 0px 5px 3px 2px #ff018f;
 }
 
 .section{
