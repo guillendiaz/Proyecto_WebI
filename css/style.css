@@ -176,3 +176,39 @@ footer p{
 #abouticons .row{
 	margin-bottom: 3%;
 }
+
+#contactinfo {
+	margin-top: -7%;
+}
+
+#contactform input, #contactform textarea{
+	background-color: #eee;
+	border-radius: 0;
+	padding: 25px 10px;
+}
+
+#contactform select{
+	background-color: #eee;
+	border-radius: 0;
+}
+
+.btn-color{
+	padding: 10px 30px;
+	font-size: 13px;
+	font-weight: 600;
+	background-color: #ffcc00;
+	border: 0;
+	color: #11012e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.btn-blanco:hover{
+	background-color: #4859FC;
+	border-color: #4859FC;
+	border: 1;
+}
+
+.section{
+	padding: 80px 0;
+}

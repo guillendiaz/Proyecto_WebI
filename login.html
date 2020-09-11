@@ -64,9 +64,67 @@
 		</div>	
 	</header>
 
-	<section id="games" class="section">
+	<section id="Register" class="section">
 		<div class="container">
-
+			
+			<div class="row">
+				<article class="col-sm-12">
+					<form name="contact" id="contact" method="post" action="">
+						
+						<div class="row">
+							<div class="col-md-1 col-sm-12">
+								<label>Full Name</label>
+							</div>
+							
+							<div class="form-group col-md-6 col-sm-12">
+								<input type="text" name="nombre" id="nombre" class="form-control" placeholder="First Name" required>
+							</div>
+							
+							<div class="form-group col-md-5 col-sm-12">
+								<input type="text" name="apellido" id="apellido" class="form-control" placeholder="Last Name" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-1 col-sm-12">
+								<label>Email</label>
+							</div>
+							
+							<div class="form-group col-md-11 col-sm-12">	
+								<input type="email" name="correo" id="correo" class="form-control" placeholder="E-mail" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-12">
+								<label>Password</label>
+								<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+							</div>
+							
+							<div class="form-group col-md-6 col-sm-12">	
+								<label>Confirm Password</label>
+								<input type="password" name="cpass" id="cpass" class="form-control" placeholder="Rewrite Password" required>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label>Country</label>
+							<select name="pais" id="pais" class="form-control">
+								<option value="HN">Honduras</option>
+								<option value="US">Estados Unidos</option>
+								<option value="CR">Costa Rica</option>
+								<option value="GU">Guatemala</option>
+								<option value="PN">Panama</option>
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<button type="submit" class="btn btn-color btn-block">Register</button>
+						</div>
+						
+					</form>
+				</article>	
+			</div>
 			
 		</div>
 	</section>
