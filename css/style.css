@@ -217,4 +217,27 @@ footer p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	padding-bottom: 30%;
+	
 }
+
+.boxin{
+	background-color: #11012e;
+	padding: 20% 5%;
+	margin-top: -55%;
+}
+
+#gamesec h3{
+	color: #ff018f;
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+#gamsec {
+	margin-top: -70%;
+}
+
+#pg {
+	width: 40%;
+}
+
