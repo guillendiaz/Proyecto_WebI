@@ -7,10 +7,12 @@
 	<meta name="description" content="Pagina principal de la web de arkadia games">
 	<title>Arkadia Home</title>
 	
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-custom.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
   				</ol>
 			</nav>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="index.html"><img src="img/Arkadia_Logo.png" alt="logotipo Arkadia" class="img-fluid imag"></a>
+				<a class="navbar-brand" href="index.html"><img src="img/Arkadia_Logo.png" alt="logotipo Arkadia" class="img-fluid imag animate__animated animate__bounce animate__slow animate__repeat-2"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon fas fa-align-justify"></span>
 				</button>
@@ -123,7 +125,7 @@
 	<section id="games" class="section">
 		<div class="container">
 
-			<h2><i class="fas fa-gamepad"></i> Games<a href="#" class="ext">Ver todos los juegos</a></h2>
+			<h2><i class="fas fa-gamepad wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms"></i> Games<a href="#" class="ext">Ver todos los juegos</a></h2>
 
 			<div class="row">
 				<article class="col-md-3 col-sm-6 col-6">
@@ -194,7 +196,7 @@
 
 		<img src="img/Arkadia_LogoG.png" alt="logotipo Arkadia" class="img-fluid">
 	</footer>
-	
+	<script src="js/wow.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	
@@ -207,6 +209,23 @@
 
 		gtag('config', 'UA-177801273-1');
 	</script>
+	<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
 	
 </body>
 </html>
